@@ -28,7 +28,6 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
-import { User } from '~/services/temp'
 
 export default {
 

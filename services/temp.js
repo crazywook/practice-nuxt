@@ -1,6 +1,4 @@
 console.log('temp temp')
-// import knex from '../database/knex'
-import mysql from 'mysql'
 import Sequelize from 'sequelize'
 
 const gfPlatform = {
@@ -16,22 +14,6 @@ const localInvoiceMarket = {
   password: 'qweR12#$',
   database: 'invoice_market',
 };
-const connection = mysql.createConnection(gfPlatform);
-// var ret=[];
-// connection.connect();
-// connection.query('SELECT * from prefectures;', function(error, row, fields){
-//   if (error) {
-//     console.log(error);
-//   }
-//   var dat = [];
-//   for (var i = 0;i < row.length; i++) {
-//     dat.push({id: row[i].id, name: row[i].name});
-//   }
-//   ret = JSON.stringify(dat);
-//   res.header('Content-Type', 'application/json; charset=utf-8')
-//   res.send(ret)
-// });
-// connection.end();
 
 const sequelize = new Sequelize('invoice_market', 'root', 'qweR12#$', {
   dialect: 'mysql'
@@ -59,4 +41,4 @@ const User = sequelize.define('account', {
 // });
 
 export const temp = 'tester'
-export { connection, User }
+export { User }

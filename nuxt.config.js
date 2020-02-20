@@ -26,10 +26,9 @@ module.exports = {
     ** Run ESLint on save
     */
     extend(config, { isDev, isClient }) {
-      config.node = {
-        fs: 'empty',
-        // 'pg-hstore': 'empty',
-      }
+      // config.node = {
+      //   fs: 'empty',
+      // }
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -42,7 +41,8 @@ module.exports = {
   },
   serverMiddleware: [
     // Will register file from project api directory to handle /api/* requires
-    { path: '/api/test', handler: '~/api/index.js' },
+    // { path: '/api', handler: '~/api/index.js' },
+    '~/api'
     // We can create custom instances too
   ]
 }

@@ -1,7 +1,7 @@
-<script lang="jsx">
+<script>
 export default {
-  render(h) {
-    return <h1>jsx test<h1>
+  render() {
+    return <h1>jsx test</h1>
   }
 }
 </script>
