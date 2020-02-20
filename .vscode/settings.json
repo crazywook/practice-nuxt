@@ -1,0 +1,4 @@
+{
+  "autoimport.useSemiColon": false,
+  "javascript.format.semicolons": "ignore"
+}
