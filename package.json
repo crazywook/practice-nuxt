@@ -18,7 +18,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "isomorphic-unfetch": "^3.0.0",
-    "knex": "^0.20.10",
+    "knex": "^2.4.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "net": "^1.0.2",
